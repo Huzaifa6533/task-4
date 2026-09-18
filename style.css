@@ -20,15 +20,14 @@ body {
   height: 150px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 70px;
-  background-color: white;
+  align-items: flex-start;
 }
 
 .logo img {
-  width: 480px;
+  width: 550px;
   max-width: 100%;
   display: block;
+  height: 148px;
 }
 
 .header-contact h3 {
@@ -38,9 +37,11 @@ body {
   color: #990000;
 }
 hr {
+  width: 350px;
   height: 4px;
   color: #333;
   background-color: #333;
+  margin-left: -5px;
 }
 .header-contact h1 {
   margin: 4px 0;
@@ -65,6 +66,7 @@ hr {
   align-items: stretch;
   background-color: #990000;
   padding-right: 50px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
 }
 .navbar a {
   display: flex;
@@ -102,6 +104,7 @@ hr {
   object-fit: cover;
   display: block;
   margin-bottom: 150px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 .hero-right {
@@ -112,6 +115,7 @@ hr {
   background-repeat: no-repeat;
   padding: 15px 20px;
   height: 105%;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 .form-title {
@@ -126,6 +130,9 @@ hr {
   padding: 6px 10px;
   font-family: Georgia, "Times New Roman", Times, serif, serif;
   font-size: 28px;
+  position: relative;
+  top: -15px;
+  left: -18px;
 }
 .form-title h3 {
   margin: 5px 0 0;
@@ -175,13 +182,6 @@ hr {
   border: 1px solid #aaa;
   background-color: white;
 }
-.confidential {
-  width: 165px;
-  height: auto;
-  top: -26px;
-  transform: rotate(20deg);
-  position: relative;
-}
 
 .case-form textarea {
   display: block;
@@ -228,11 +228,12 @@ hr {
 
   padding: 10px 18px;
 
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 23px;
+  font-weight: 400;
 
   cursor: pointer;
   margin-right: 50px;
+  width: 300px;
 }
 
 .case-btn img {
@@ -255,6 +256,7 @@ hr {
   width: 32%;
   padding: 0 25px;
   border-right: 1px solid #ccc;
+  margin-top: 33px;
 }
 
 .middle-section {
@@ -340,8 +342,14 @@ hr {
 }
 
 .law-image {
+  width: 230px;
+  height: 130px;
+  margin-left: px;
+}
+.order-image {
   width: 250px;
   height: 150px;
+  margin-left: 100px;
 }
 
 .credentials-logos {
@@ -383,15 +391,19 @@ hr {
   align-items: center;
   gap: 6px;
   padding: 4px 10px;
-  background-color: #990000;
+  background-color: #b80909;
   color: white;
-  font-size: 11px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 400;
   text-decoration: none;
-  height: 35px;
-  width: 110px;
-margin-top: 5px;
-margin-left: 50px;
+  height: 40px;
+  width: 130px;
+  margin-top: 5px;
+  margin-left: 50px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.red-button:hover {
+  background-color: #a60505;
 }
 
 .red-button img {
@@ -405,14 +417,18 @@ margin-left: 50px;
   align-items: center;
   gap: 6px;
   padding: 4px 10px;
-  background-color: #990000;
+  background-color: #b80909;
   color: white;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 400;
   text-decoration: none;
-  height: 35px;
-  width: 110px;
-
+  height: 40px;
+  width: 130px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.dui-button:hover {
+  background-color: #a60505;
 }
 
 .dui-button img {
@@ -433,15 +449,18 @@ margin-left: 50px;
   align-items: center;
   gap: 6px;
   padding: 4px 10px;
-  background-color: #990000;
+  background-color: #b80909;
   color: white;
-  font-size: 10px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 400;
   text-decoration: none;
-  height: 35px;
-  width: 110px;
+  height: 40px;
+  width: 140px;
   margin-top: 10px;
-   
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.LM-btn:hover {
+  background-color: #a60505;
 }
 
 .hr-line-L {
@@ -459,18 +478,18 @@ margin-left: 50px;
 }
 
 .practice-area {
-  width: 25%;
-  padding-right: 30px;
+  width: 27%;
+  padding-right: 35px;
 }
 
 .page-content {
-  width: 55%;
-  padding: 0 30px;
+  width: 50%;
+  padding: 0 35px;
 }
 
 .right-sidebar {
-  width: 20%;
-  padding-left: 25px;
+  width: 23%;
+  padding-left: 35px;
 }
 
 .practice-area h2 {
@@ -488,6 +507,7 @@ margin-left: 50px;
   flex-direction: column;
   gap: 12px;
   margin-top: 20px;
+  width: 90%;
 }
 
 .practice-links > a {
@@ -495,12 +515,25 @@ margin-left: 50px;
   flex-direction: column;
   padding: 10px 10px 6px 15px;
   background-color: #888585;
-  border-left: 8px solid #990000;
+  border-left: 8px solid;
   color: white;
   text-decoration: none;
-  width: 220px;
+  width: 230px;
   margin-top: 05px;
-  height: 70px;
+  height: 65px;
+  position: relative;
+}
+.practice-links > a::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 8px;
+  height: 65px;
+
+  background: linear-gradient(to bottom, #990000 0%, #990000 30%, #000000 100%);
 }
 
 .practice-links > a > span {
@@ -509,29 +542,29 @@ margin-left: 50px;
 }
 
 .practice-links small img {
-  height: 9px;
+  height: 13px;
   width: auto;
   background-color: #999;
 }
 
 .dui-learn {
   margin-left: 80px;
-  margin-top: 15px;
+  margin-top: 8px;
   font-weight: 600;
 }
 .reck-learn {
   margin-left: 80px;
-  margin-top: 15px;
+  margin-top: 8px;
   font-weight: 600;
 }
 .speed-learn {
   margin-left: 80px;
-  margin-top: 15px;
+  margin-top: 8px;
   font-weight: 600;
 }
 .traffic-learn {
   margin-left: 80px;
-  margin-top: 15px;
+  margin-top: 8px;
   font-weight: 600;
 }
 
@@ -561,15 +594,16 @@ margin-left: 50px;
 }
 
 .sidebar-item {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .sidebar-item h2 {
-  margin: 0 0 7px;
+  margin: 0 0 6px;
 
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 0.95;
+
   color: #333;
 }
 
@@ -601,13 +635,17 @@ margin-left: 50px;
   height: 35px;
   width: 100p;
   text-decoration: none;
-  background-color: #990000;
+  background-color: #b80909;
   margin-right: 50px;
   font-weight: 400;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 4px 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.sidebar-button:hover {
+  background-color: #a60505;
 }
 
 .social-logos {
@@ -623,6 +661,8 @@ margin-left: 50px;
   height: 2px;
   width: 190px;
   margin-top: -30px;
+  margin-right: -2px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 2);
 }
 
 .right-logos {
@@ -643,10 +683,363 @@ margin-left: 50px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-
-.footer{
+.footer {
   width: 100%;
   background-color: maroon;
   height: 9px;
+}
 
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 30px;
+    height: auto;
+  }
+
+  .logo img {
+    width: 350px;
+  }
+
+  .header-contact h3 {
+    font-size: 18px;
+  }
+  .header-contact h1 {
+    font-size: 34px;
+  }
+
+  .header-contact p {
+    font-size: 14px;
+  }
+
+  .navbar {
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  .navbar a {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 25px 30px;
+  }
+
+  .hero-left,
+  .hero-right {
+    flex: 1;
+  }
+
+  .info-row {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .main-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .practice-area {
+    width: 27%;
+  }
+
+  .page-content {
+    width: 48%;
+    padding: 0 20px;
+  }
+  .right-sidebar {
+    width: 25%;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .logo {
+    position: static;
+  }
+
+  .logo img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .header-contact {
+    text-align: center;
+  }
+
+  .header-contact h3 {
+    font-size: 17px;
+  }
+
+  .header-contact h1 {
+    font-size: 32px;
+  }
+
+  .header-contact p {
+    font-size: 14px;
+  }
+
+  .navbar {
+    height: auto;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 0;
+  }
+
+  .navbar a {
+    padding: 15px 18px;
+    font-size: 13px;
+  }
+
+  .hero {
+    flex-direction: column;
+
+    height: auto;
+
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-right {
+    padding: 20px;
+  }
+
+  .form-title {
+    gap: 15px;
+  }
+
+  .form-title h2 {
+    font-size: 22px;
+  }
+
+  .form-title h3 {
+    font-size: 19px;
+  }
+
+  .form-title h3 span {
+    font-size: 25px;
+  }
+
+  .form-description {
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .form-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .form-fields {
+      width: 70%;
+    }
+
+    .confidential {
+      width: 120px;
+      height: auto;
+      position: relative;
+      top: 0;
+      transform: rotate(8deg);
+    }
+  }
+
+  .form-fields {
+    width: 70%;
+  }
+
+  .confidential {
+    width: 130px;
+    align-self: center;
+  }
+  .case-form textarea {
+    width: 70%;
+  }
+  .form-bottom {
+    width: 70%;
+    gap: 15px;
+  }
+  .info-row {
+    flex-direction: column;
+    padding: 25px 20px;
+  }
+
+  .dui-section,
+  .middle-section,
+  .credentials-section {
+    width: 100%;
+    padding: 20px 0;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .credentials-section {
+    border-bottom: none;
+  }
+  .main-content {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  .practice-area,
+  .page-content,
+  .right-sidebar {
+    width: 100%;
+    padding: 0;
+  }
+  .practice-area {
+    margin-bottom: 40px;
+  }
+  .page-content {
+    margin-bottom: 40px;
+  }
+  .practice-links {
+    width: 100%;
+  }
+  .right-sidebar {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .website {
+    width: 100%;
+    max-width: 100%;
+  }
+  .header {
+    height: auto;
+    padding: 15px 20px;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo {
+    position: static;
+    transform: none;
+  }
+  .logo img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .header-contact {
+    text-align: center;
+  }
+  .navbar {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar a {
+    flex: 1 1 33.333%;
+    padding: 14px 8px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .hero {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    flex: none;
+  }
+  .hero-left img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .hero-right {
+    padding: 20px;
+  }
+
+  .form-fields {
+    width: 70%;
+    margin-right: 200px;
+  }
+
+  .case-form textarea {
+    width: 80%;
+  }
+  .form-bottom {
+    width: 100%;
+  }
+  .info-row {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .dui-section,
+  .middle-section,
+  .credentials-section {
+    width: 100%;
+
+    padding: 20px 0;
+
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .main-content {
+    width: 100%;
+
+    padding: 25px 20px;
+
+    flex-direction: column;
+  }
+  .practice-area,
+  .page-content,
+  .right-sidebar {
+    width: 100%;
+    padding: 0;
+  }
+  .practice-links {
+    width: 100%;
+  }
+
+  .practice-links > a {
+    width: 50%;
+    height: auto;
+    min-height: 65px;
+  }
+
+  .page-content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .right-sidebar {
+    margin-top: 20px;
+  }
 }

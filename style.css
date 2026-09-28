@@ -101,9 +101,9 @@ hr {
 .hero-left img {
   width: 100%;
   height: 105%;
-  object-fit: cover;
+  /* object-fit: cover; */
   display: block;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -130,7 +130,6 @@ hr {
   padding: 6px 10px;
   font-family: Georgia, "Times New Roman", Times, serif, serif;
   font-size: 28px;
-  position: relative;
   top: -15px;
   left: -18px;
 }
@@ -182,6 +181,13 @@ hr {
   border: 1px solid #aaa;
   background-color: white;
 }
+.confidential {
+  width: 130px;
+  transform: rotate(16deg);
+  right: 200px;
+  margin-bottom: 30px;
+  display: flex;
+}
 
 .case-form textarea {
   display: block;
@@ -219,46 +225,40 @@ hr {
 
   color: #555;
 }
-
 .form-bottom button {
   border: none;
-
   background-color: #990000;
   color: white;
-
   padding: 10px 18px;
-
   font-size: 23px;
   font-weight: 400;
-
   cursor: pointer;
   margin-right: 50px;
   width: 300px;
+  height: 50px;
 }
 
 .case-btn img {
-  margin-left: 5px;
-  margin-top: 5px;
+  margin-left: 270px;
+  position: relative;
+  bottom: 27px;
+  right: 5px;
 }
-
 .case-btn:hover {
   background-color: #700000;
 }
-
 .info-row {
   display: flex;
   width: 100%;
   padding: 25px 55px 30px;
   background-color: white;
 }
-
 .dui-section {
   width: 32%;
   padding: 0 25px;
   border-right: 1px solid #ccc;
   margin-top: 33px;
 }
-
 .middle-section {
   width: 38%;
   padding: 0 25px;
@@ -275,25 +275,21 @@ hr {
   align-items: flex-end;
   justify-content: space-between;
 }
-
 .dui-text h2 {
   margin: 0 0 8px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   color: #000000a3;
 }
-
 .dui-text h2 span {
   color: #990000;
 }
-
 .dui-text h3 {
   margin: 0 0 15px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #990000;
 }
-
 .dui-text p {
   margin: 0 0 14px;
   font-size: 15px;
@@ -301,7 +297,6 @@ hr {
   color: #333;
   font-weight: 400;
 }
-
 .paste-board {
   width: 90px;
   height: auto;
@@ -349,7 +344,7 @@ hr {
 .order-image {
   width: 250px;
   height: 150px;
-  margin-left: 100px;
+  margin-left: 70px;
 }
 
 .credentials-logos {
@@ -458,6 +453,8 @@ hr {
   width: 140px;
   margin-top: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  bottom: 20px;
 }
 .LM-btn:hover {
   background-color: #a60505;
@@ -467,7 +464,6 @@ hr {
   width: 400px;
   height: 1px;
   color: #aaa;
-  position: absolute;
 }
 
 .main-content {
@@ -589,8 +585,8 @@ hr {
 }
 
 .learn-heading {
-  margin-top: 35px !important;
-  margin-right: 80px !important;
+  position: relative;
+  top: 13px;
 }
 
 .sidebar-item {
@@ -652,6 +648,7 @@ hr {
   display: flex;
   gap: 10px;
   margin-top: -20px;
+  cursor: pointer;
 }
 
 .bottom-hr {
@@ -689,6 +686,8 @@ hr {
   height: 9px;
 }
 
+/* media query */
+
 @media (max-width: 1024px) {
   .header {
     padding: 15px 30px;
@@ -725,20 +724,74 @@ hr {
     padding: 25px 30px;
   }
 
-  .hero-left,
-  .hero-right {
-    flex: 1;
+  .hero-left img{
+    height: 493px;
   }
-
+  
+  .form-bottom button{
+    position: relative;
+    left: 40px;
+    width: 200px;
+    font-size: 15px;
+    height: 40px;
+    top: 30px;
+  }
+  
+.case-form textarea{
+  height: 55px;
+  width: 350px;
+}
+.hero-right{
+  height: 493px;
+}
+  .case-btn img{
+    position: relative;
+    right: 100px;
+    top: -17px;
+  }
+   .form-bottom p{
+    display: flex;
+    top: 30px;
+    text-align: left;
+    white-space: nowrap;
+    position: relative;
+  }
   .info-row {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .credentials-logos{
+  position: relative;
+  left: 30px;
+}
+.credentials-section h2{
+  position: relative;
+  left: 40px;
+}
+.credentials-section p{
+  position: relative;
+  left: 50px;
+}
+.order-image{
+  position: relative;
+  right: 40px;
+  height: 130px;
+  width: 230px;
+}
+
+.LM-btn{
+  position: relative;
+  right: 50px;
+  height: 30px;
+  width: 138px;
+}
 
   .main-content {
     padding-left: 30px;
     padding-right: 30px;
   }
+
+ 
 
   .practice-area {
     width: 27%;
@@ -752,99 +805,47 @@ hr {
     width: 25%;
     padding-left: 20px;
   }
+.law-image {
+  width: 200px;
+  height: 100px;
+  margin-left: px;
+}
+.red-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background-color: #b80909;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  height: 30px;
+  width: 125px;
+  margin-top: 5px;
+  margin-left: 50px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.dui-button {
+  margin-left: 150px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background-color: #b80909;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  height: 30px;
+  width: 123px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+  
 }
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-
-    padding: 20px;
-    gap: 15px;
-  }
-
-  .logo {
-    position: static;
-  }
-
-  .logo img {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .header-contact {
-    text-align: center;
-  }
-
-  .header-contact h3 {
-    font-size: 17px;
-  }
-
-  .header-contact h1 {
-    font-size: 32px;
-  }
-
-  .header-contact p {
-    font-size: 14px;
-  }
-
-  .navbar {
-    height: auto;
-
-    flex-wrap: wrap;
-    justify-content: center;
-
-    padding: 0;
-  }
-
-  .navbar a {
-    padding: 15px 18px;
-    font-size: 13px;
-  }
-
-  .hero {
-    flex-direction: column;
-
-    height: auto;
-
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .hero-left,
-  .hero-right {
-    width: 100%;
-  }
-
-  .hero-left img {
-    width: 100%;
-    height: auto;
-  }
-
-  .hero-right {
-    padding: 20px;
-  }
-
-  .form-title {
-    gap: 15px;
-  }
-
-  .form-title h2 {
-    font-size: 22px;
-  }
-
-  .form-title h3 {
-    font-size: 19px;
-  }
-
-  .form-title h3 span {
-    font-size: 25px;
-  }
-
-  .form-description {
-    font-size: 14px;
-  }
-
   @media (max-width: 768px) {
     .form-info {
       display: flex;
@@ -852,15 +853,123 @@ hr {
       align-items: center;
       gap: 15px;
     }
+    .header {
+      flex-direction: column;
+      align-items: center;
+
+      padding: 20px;
+      gap: 15px;
+    }
+
+    .logo {
+    }
+
+    .logo img {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .header-contact {
+      text-align: center;
+    }
+
+    .header-contact h3 {
+      font-size: 17px;
+    }
+
+    .header-contact h1 {
+      font-size: 32px;
+    }
+
+    .header-contact p {
+      font-size: 14px;
+    }
+
+    .navbar {
+      height: auto;
+
+      flex-wrap: wrap;
+      justify-content: center;
+
+      padding: 0;
+    }
+
+    .navbar a {
+      padding: 15px 18px;
+      font-size: 13px;
+    }
+
+    .hero {
+      flex-direction: column;
+
+      height: auto;
+
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .hero-left,
+    .hero-right {
+      width: 100%;
+    }
+
+    .hero-left img {
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-right {
+      padding: 20px;
+    }
+
+    .form-title {
+      gap: 15px;
+    }
+
+    .form-title h2 {
+      font-size: 22px;
+    }
+
+    .form-title h3 {
+      font-size: 19px;
+    }
+
+    .form-title h3 span {
+      font-size: 25px;
+    }
+
+    .form-description {
+      font-size: 14px;
+    }
 
     .form-fields {
       width: 70%;
     }
-
+     .form-bottom button {
+    width: 230px;
+    min-width: 0;
+    display: block;
+    font-size: 18px;
+    position: relative;
+    left: 120px;
+    height: 40px; 
+    top: -1px;
+  }
+  .case-btn img{
+    position: relative;
+    left: -70px;
+    top: -20px;
+  }
+  .form-bottom p{
+    position: relative;
+    top: -1px;
+  }
+  .field{
+    width: 60%;
+  }
     .confidential {
       width: 120px;
       height: auto;
-      position: relative;
       top: 0;
       transform: rotate(8deg);
     }
@@ -872,14 +981,22 @@ hr {
 
   .confidential {
     width: 130px;
-    align-self: center;
+    transform: rotate(18deg);
+    right: 190px;
+    display: flex;
+    margin-top: 35px;
+    position: relative;
   }
   .case-form textarea {
-    width: 70%;
+    width: 65%;
   }
   .form-bottom {
     width: 70%;
     gap: 15px;
+  }
+  .form-bottom button{
+    position: relative;
+    left: 50px;
   }
   .info-row {
     flex-direction: column;
@@ -920,126 +1037,157 @@ hr {
     margin-top: 20px;
   }
 }
-@media (max-width: 768px) {
-  html,
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-  .website {
-    width: 100%;
-    max-width: 100%;
-  }
-  .header {
-    height: auto;
-    padding: 15px 20px;
 
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 480px) {
+  .hero-right {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .form-title {
     gap: 10px;
   }
-  .logo {
-    position: static;
-    transform: none;
-  }
-  .logo img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
-  .header-contact {
-    text-align: center;
-  }
-  .navbar {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .navbar a {
-    flex: 1 1 33.333%;
-    padding: 14px 8px;
-    font-size: 13px;
-    text-align: center;
+
+  .form-title h2 {
+    font-size: 18px;
+    padding: 5px 7px;
   }
 
-  .hero {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    flex-direction: column;
+  .form-title h3 {
+    font-size: 15px;
   }
-  .hero-left,
-  .hero-right {
-    width: 100%;
-    flex: none;
+
+  .form-title h3 span {
+    font-size: 20px;
   }
-  .hero-left img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+
+  .form-description {
+    font-size: 12px;
   }
-  .hero-right {
-    padding: 20px;
+
+  .form-info {
+    display: block;
   }
 
   .form-fields {
     width: 70%;
-    margin-right: 200px;
+  }
+
+  .field input {
+    width: 100%;
+    min-width: 0;
+  }
+  .confidential {
+    width: 100px;
+    margin: 8px auto;
+    transform: rotate(18deg);
+    display: flex;
+    position: absolute;
+    top: 850px;
+    left: 330px;
+    bottom: 50px;
   }
 
   .case-form textarea {
-    width: 80%;
+    width: 75%;
+    box-sizing: border-box;
+    height: 50px;
+    position: relative;
+    right: 10px;
   }
+
   .form-bottom {
-    width: 100%;
-  }
-  .info-row {
-    width: 100%;
-    padding: 20px;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
-  .dui-section,
-  .middle-section,
-  .credentials-section {
+
+  .form-bottom p {
+    position: relative;
+    right: 75px;
+    top: 50px;
+    bottom: 30px;
+  }
+
+  .form-bottom button {
+    width: 230px;
+    min-width: 0;
+    display: block;
+    font-size: 18px;
+    position: relative;
+    left: 120px;
+    height: 40px; 
+    top: -1px;
+  }
+  .case-btn img {
+    position: relative;
+    right: 70px;
+    top: -20px;
+  }
+  .hero-left img {
     width: 100%;
-
-    padding: 20px 0;
-
-    border-right: none;
-    border-bottom: 1px solid #ccc;
-  }
-  .main-content {
-    width: 100%;
-
-    padding: 25px 20px;
-
-    flex-direction: column;
-  }
-  .practice-area,
-  .page-content,
-  .right-sidebar {
-    width: 100%;
-    padding: 0;
-  }
-  .practice-links {
-    width: 100%;
-  }
-
-  .practice-links > a {
-    width: 50%;
     height: auto;
-    min-height: 65px;
   }
 
-  .page-content {
-    margin-top: 40px;
-    margin-bottom: 40px;
+  .credentials-logos img {
+    max-width: 95px;
+    max-height: 90px;
+    width: auto;
+    height: auto;
+    position: relative;
+    left: 100px;
   }
 
-  .right-sidebar {
-    margin-top: 20px;
+  .credentials-section h2 {
+    margin: 0 0 7px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 1;
+    color: #000000a3;
+    position: relative;
+    left: 125px;
   }
+
+ .credentials-section p {
+  margin: 0 0 10px;
+  font-size: 15px;
+  position: relative;
+  left: 30px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #333;
+}
+
+.hr-line-L{
+  position: relative;
+  left: 100px;
+  width: 300px;
+}
+
+.LM-btn{
+  position: relative;
+  bottom: 20px;
+}
+
+.practice-area h2{
+    position: relative;
+    left: 130px;
+}
+.practice-links > a{
+  position: relative;
+  left: 110px;
+}
+.practice-area h2 {
+  position: relative;
+  right: 100px !important;
+}
+.learn-heading{
+  position: relative;
+  right: 100px;
+  
+}
+
+
 }
